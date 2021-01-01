@@ -49,20 +49,13 @@ yarn dev
 
 ---
 
-[Details soon ...]
-
-_POST_: `/api/login`
-
-_POST_: `/api/register`
-
-_POST_: `/api/isauthenticated`
-
-_POST_: `/api/isauthorized`
-
-_GET_: `/api/users`
-
-_GET_: `/api/user/:id`
-
-_PUT_: `/api/user/:id`
-
-_DELETE_: `/api/user/:id`
+| Request type |          path          |                Parameters |      in |
+| ------------ | :--------------------: | ------------------------: | ------: |
+| _POST_       |      `/api/login`      |           email, password |    body |
+| _POST_       |    `/api/register`     | email, username, password |    body |
+| _POST_       | `/api/isauthenticated` |                      auth | headers |
+| _POST_       |  `/api/isauthorized`   |         auth, role(admin) |  header |
+| _GET_        |      `/api/users`      |                      none |    none |
+| _GET_        |    `/api/user/:id`     |                        id |    path |
+| _PUT_        |    `/api/user/:id`     |                        id |    path |
+| _DELETE_     |    `/api/user/:id`     |                        id |    path |
