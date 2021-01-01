@@ -49,13 +49,13 @@ yarn dev
 
 ---
 
-| Request type |          path          |                Parameters |      in |
-| ------------ | :--------------------: | ------------------------: | ------: |
-| _POST_       |      `/api/login`      |           email, password |    body |
-| _POST_       |    `/api/register`     | email, username, password |    body |
-| _POST_       | `/api/isauthenticated` |                      auth | headers |
-| _POST_       |  `/api/isauthorized`   |         auth, role(admin) |  header |
-| _GET_        |      `/api/users`      |                      none |    none |
-| _GET_        |    `/api/user/:id`     |                        id |    path |
-| _PUT_        |    `/api/user/:id`     |                        id |    path |
-| _DELETE_     |    `/api/user/:id`     |                        id |    path |
+| Request type |          path          |                                    Parameters |      in |
+| ------------ | :--------------------: | --------------------------------------------: | ------: |
+| _POST_       |      `/api/login`      |                               email, password |    body |
+| _POST_       |    `/api/register`     |                     email, username, password |    body |
+| _POST_       | `/api/isauthenticated` |                                          auth | headers |
+| _POST_       |  `/api/isauthorized`   | auth(takes the token as a value), role(admin) |  header |
+| _GET_        |      `/api/users`      |                                          none |    none |
+| _GET_        |    `/api/user/:id`     |                                            id |    path |
+| _PUT_        |    `/api/user/:id`     |                                            id |    path |
+| _DELETE_     |    `/api/user/:id`     |                                            id |    path |
