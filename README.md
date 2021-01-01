@@ -1,7 +1,6 @@
 # what is it ?
 
 A simple user managment api
-demo : https://authservernodejs.herokuapp.com/
 
 # Usage:
 
